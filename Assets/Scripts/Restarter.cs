@@ -17,6 +17,7 @@ public class Restarter : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Despawner")

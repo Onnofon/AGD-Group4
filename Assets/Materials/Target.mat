@@ -5,7 +5,8 @@ Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Target
   m_Shader: {fileID: 4800000, guid: e7d298460c6ac39449005cc67f116410, type: 3}
   m_ShaderKeywords: _EMISSION
@@ -65,7 +66,7 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OutlineWidth: 1.1
+    - _OutlineWidth: 1.02
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -76,4 +77,4 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 1, g: 0, b: 0, a: 1}
-    - _OutlineColor: {r: 340.44495, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 0, g: 454.52072, b: 0, a: 1}

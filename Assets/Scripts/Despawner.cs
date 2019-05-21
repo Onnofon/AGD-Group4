@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class Despawner : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Ground")
+        {
+            Destroy(other.gameObject);
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.gameObject.tag == "Ground")
+        {
+            Destroy(other.gameObject);
+        }
+    }
 
     void OnCollisionEnter(Collision col)
     {
