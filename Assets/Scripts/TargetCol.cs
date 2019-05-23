@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TargetCol : MonoBehaviour
 {
-    private GameManager gameController;
+    private GameManagerGeneration gameController;
     public int scoreValue;
 
     public void Start()
@@ -13,7 +13,7 @@ public class TargetCol : MonoBehaviour
             GameObject gameControllerObject = GameObject.FindWithTag("GameController");
             if (gameControllerObject != null)
             {
-                gameController = gameControllerObject.GetComponent<GameManager>();
+                gameController = gameControllerObject.GetComponent<GameManagerGeneration>();
             }
 
         }
@@ -22,7 +22,7 @@ public class TargetCol : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bullet")
         {
-            gameController.TargetScore(scoreValue);
+            gameController.UpdateScore(3);
             Destroy(gameObject);
         }
     }
