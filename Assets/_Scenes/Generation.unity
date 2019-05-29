@@ -655,10 +655,15 @@ MonoBehaviour:
   - {fileID: 4259446017745349435, guid: 4e3d025ccaa4bd847a1e6d8d720fffd0, type: 3}
   - {fileID: 6782465552454649420, guid: fa413fd52c1c3d74798697ed8e62a17b, type: 3}
   difficulty2:
-  - {fileID: 1057508499476716, guid: 7a91e20a7353f6b4196bc0ea661cda7f, type: 3}
-  - {fileID: 1057508499476716, guid: 7a91e20a7353f6b4196bc0ea661cda7f, type: 3}
-  - {fileID: 1057508499476716, guid: 7a91e20a7353f6b4196bc0ea661cda7f, type: 3}
-  difficulty3: []
+  - {fileID: 4119480420069299019, guid: b828eb966308b1946b3798521f534326, type: 3}
+  - {fileID: 3022661389345454492, guid: 6693e6e247225274b9b599d3a812c1a8, type: 3}
+  - {fileID: 4259446017745349435, guid: 4e3d025ccaa4bd847a1e6d8d720fffd0, type: 3}
+  - {fileID: 1163282653642126325, guid: 8cbca2c6faaf8ae40bb94d9df619deca, type: 3}
+  difficulty3:
+  - {fileID: 3022661389345454492, guid: 6693e6e247225274b9b599d3a812c1a8, type: 3}
+  - {fileID: 1163282653642126325, guid: 8cbca2c6faaf8ae40bb94d9df619deca, type: 3}
+  - {fileID: 4259446017745349435, guid: 4e3d025ccaa4bd847a1e6d8d720fffd0, type: 3}
+  - {fileID: 6782465552454649420, guid: fa413fd52c1c3d74798697ed8e62a17b, type: 3}
   difficulty: 1
   gameMangerGeneration: {fileID: 1941211861}
   spawnroomCol: {fileID: 2027780464}
@@ -666,10 +671,13 @@ MonoBehaviour:
   toBeDeletedRoom: {fileID: 2074612686}
   oldRoom: {fileID: 1030308584}
   nextRoomCollider: {fileID: 2027780463}
-  SpawnRoom: {fileID: 915648205}
+  spawnRoom: {fileID: 915648205}
   roomSize: {x: 70, y: 30, z: 70}
-  amountOfObjects: 50
+  amountOfObjects: 0
   target: {fileID: 1057508499476716, guid: 7a91e20a7353f6b4196bc0ea661cda7f, type: 3}
+  amountOfTargets: 5
+  roomSegmentSize: 10
+  chanceToSpawn: 0.8
 --- !u!4 &1311818536
 Transform:
   m_ObjectHideFlags: 0
@@ -720,8 +728,10 @@ MonoBehaviour:
   scoreText: {fileID: 6380760312125486495}
   score: 0
   time: 0
+  timestampTime: 0
   countdownText: {fileID: 6381030306642745153}
   roomGeneration: {fileID: 1311818535}
+  increaseDifficultyInterval: 15
 --- !u!4 &1941211862
 Transform:
   m_ObjectHideFlags: 0
@@ -835,7 +845,7 @@ Transform:
   m_GameObject: {fileID: 2074612686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10, y: 0, z: 0}
-  m_LocalScale: {x: 70, y: 30, z: 70}
+  m_LocalScale: {x: 70, y: 70, z: 70}
   m_Children: []
   m_Father: {fileID: 1311818536}
   m_RootOrder: 0
@@ -1419,7 +1429,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -55.9, y: 52.2}
+  m_AnchoredPosition: {x: -55.899902, y: 52.19995}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &6486526059239507983
@@ -1514,7 +1524,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -4.2999268, y: 106.400024}
+  m_AnchoredPosition: {x: -4.2998047, y: 106.400024}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &6487293072983675413
