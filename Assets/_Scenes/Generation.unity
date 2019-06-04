@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 565350379}
   m_Layer: 0
   m_Name: Start
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -402,8 +402,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 565350378}
   m_LocalRotation: {x: -0, y: -0.70635164, z: -0, w: 0.7078612}
-  m_LocalPosition: {x: 0, y: 0, z: 73.659355}
-  m_LocalScale: {x: 400, y: 0.2, z: 4}
+  m_LocalPosition: {x: -0.3, y: 0, z: -64.4}
+  m_LocalScale: {x: 60, y: 0.2, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -648,6 +648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eda905e0b9c00f4187f63924bf42892, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  difficulty: 2
   difficulty1:
   - {fileID: 4119480420069299019, guid: b828eb966308b1946b3798521f534326, type: 3}
   - {fileID: 3022661389345454492, guid: 6693e6e247225274b9b599d3a812c1a8, type: 3}
@@ -655,16 +656,14 @@ MonoBehaviour:
   - {fileID: 4259446017745349435, guid: 4e3d025ccaa4bd847a1e6d8d720fffd0, type: 3}
   - {fileID: 6782465552454649420, guid: fa413fd52c1c3d74798697ed8e62a17b, type: 3}
   difficulty2:
-  - {fileID: 4119480420069299019, guid: b828eb966308b1946b3798521f534326, type: 3}
-  - {fileID: 3022661389345454492, guid: 6693e6e247225274b9b599d3a812c1a8, type: 3}
-  - {fileID: 4259446017745349435, guid: 4e3d025ccaa4bd847a1e6d8d720fffd0, type: 3}
-  - {fileID: 1163282653642126325, guid: 8cbca2c6faaf8ae40bb94d9df619deca, type: 3}
+  - {fileID: 4119480420069299019, guid: c19279a8cb9e527459ad2827b19356c2, type: 3}
+  - {fileID: 3022661389345454492, guid: 447f841215bdadc4492c93d31f416640, type: 3}
+  - {fileID: 4259446017745349435, guid: 9bb05bb7ee2ddb944bc256fb1d6d6a30, type: 3}
+  - {fileID: 1163282653642126325, guid: 7cba41f2e04718e4486ae42168eea17a, type: 3}
   difficulty3:
-  - {fileID: 3022661389345454492, guid: 6693e6e247225274b9b599d3a812c1a8, type: 3}
-  - {fileID: 1163282653642126325, guid: 8cbca2c6faaf8ae40bb94d9df619deca, type: 3}
-  - {fileID: 4259446017745349435, guid: 4e3d025ccaa4bd847a1e6d8d720fffd0, type: 3}
-  - {fileID: 6782465552454649420, guid: fa413fd52c1c3d74798697ed8e62a17b, type: 3}
-  difficulty: 1
+  - {fileID: 6782465552454649420, guid: f263aa625f758534ebdea51a7b4821b3, type: 3}
+  - {fileID: 1163282653642126325, guid: 283db1d3830d5ea4b9234cba4be85ff7, type: 3}
+  - {fileID: 4259446017745349435, guid: 4fe67deb59e11cc49b90e20d88872865, type: 3}
   gameMangerGeneration: {fileID: 1941211861}
   spawnroomCol: {fileID: 2027780464}
   pipeline: {fileID: 1311818534}
@@ -675,9 +674,9 @@ MonoBehaviour:
   roomSize: {x: 70, y: 30, z: 70}
   amountOfObjects: 0
   target: {fileID: 1057508499476716, guid: 7a91e20a7353f6b4196bc0ea661cda7f, type: 3}
-  amountOfTargets: 5
-  roomSegmentSize: 10
-  chanceToSpawn: 0.8
+  amountOfTargets: 8
+  roomSegmentSize: 0
+  chanceToSpawn: 0
 --- !u!4 &1311818536
 Transform:
   m_ObjectHideFlags: 0
@@ -731,7 +730,6 @@ MonoBehaviour:
   timestampTime: 0
   countdownText: {fileID: 6381030306642745153}
   roomGeneration: {fileID: 1311818535}
-  increaseDifficultyInterval: 15
 --- !u!4 &1941211862
 Transform:
   m_ObjectHideFlags: 0
