@@ -5,11 +5,13 @@ using UnityEngine;
 
 public class RoomGeneration : MonoBehaviour
 {
+    [Range(1, 10)]
+    public int difficulty;
+    private int difficultyMultiplier;
     public GameObject[] difficulty1;
     public GameObject[] difficulty2;
     public GameObject[] difficulty3;
     private GameObject[] toSpawnArray;
-    public int difficulty = 1;
 
     public GameManagerGeneration gameMangerGeneration;
     public SpawnRoomCollider spawnroomCol;
@@ -36,19 +38,20 @@ public class RoomGeneration : MonoBehaviour
 
     public void FillRoom()
     {
-        if (difficulty == 1)
+        if (difficulty >= 1 && difficulty < 4)
         {
             toSpawnArray = difficulty1;
         }
-        else if (difficulty == 2)
+        else if (difficulty >= 4 && difficulty < 8)
         {
             toSpawnArray = difficulty2;
         }
-        else
+        else if(difficulty >= 8 )
         {
             toSpawnArray = difficulty3;
         }
-
+        chanceToSpawn = 1.0 - (difficulty * 0.03);
+        roomSegmentSize = difficulty + 5;
         origin = spawnRoom.transform.position;
         range = spawnRoom.transform.localScale / 2.0f;
         spawnCoord = new Vector3(-range.x, -range.y, -range.z);
